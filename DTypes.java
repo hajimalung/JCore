@@ -3,12 +3,14 @@ public class DTypes {
         // primitive datatypes
 
         // boolean data tye
+        // this is not 0 or 1 this is only tru or false
         boolean bo = true;
         System.out.println(bo);
 
         // number data types
 
         // allocates one byte memory
+        // numeric literals
         byte b = 12;
         System.out.println(b);
 
@@ -27,7 +29,7 @@ public class DTypes {
         System.out.println(l);
 
         // numbers with decimol point data types
-
+        // numeric literals with decimol point
         // allocates 4 bytes of memory
         float fl = 123.45f;
         System.out.println(fl);
@@ -39,6 +41,7 @@ public class DTypes {
 
         // textual data types
         // allocates 2 bytes of memory
+        // textual literals
         char c = 'a';
         System.out.println(c);
 
@@ -46,5 +49,34 @@ public class DTypes {
         // it takes memomy based on the String length
         String str = "This is a String!";
         System.out.println(str);
+
+        // by default numeric literals are base 10 numbersystem
+        // we can also use different base system
+        // below exacmple shows binary base system - prefix with 0b
+        // it prints output as 5
+        int binaryNum = 0b101;
+        System.out.println(binaryNum);
+
+        // for hexadecimol base system we need to prefix 0x
+        // prints 4095 in console
+        int hexaDecimolNumber = 0xFFF;
+        System.out.println(hexaDecimolNumber);
+
+        // for the benifit of developers java we can add _ in betwwen numbers but in
+        // memory it will store only number
+        // print 1000000
+        int num1 = 1_00_000_0;
+        System.out.println(num1);
+
+        // print 123456
+        int num2 = 1_23_456;
+        System.out.println(num2);
+
+        // epsilon numbers
+        double num3 = 12e10;
+        System.out.println(num3);
+
+        c++;
+        System.out.println(c);
     }
 }
